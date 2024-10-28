@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushiya Bhoge | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
+    <link rel="stylesheet" href="style.css"> <!-- Link custom CSS -->
+    
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 text-white p-5 sticky top-0 z-50 flex justify-between items-center" id="navbar">
+        <div class="logo">
+            <h2 class="text-2xl font-bold">Khushiya Bhoge</h2>
+        </div>
+        <ul class="flex space-x-6">
+            <li><a href="#about" class="hover:text-yellow-500" id="link-about">About Me</a></li>
+            <li><a href="#projects" class="hover:text-yellow-500" id="link-projects">Projects</a></li>
+            <li><a href="#education" class="hover:text-yellow-500" id="link-education">Education</a></li>
+            <li><a href="#skills" class="px-4 hover:text-blue-400">Skills</a></li>
+            <li><a href="#contact" class="hover:text-yellow-500" id="link-contact">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- About Me Section with Photo on the Left -->
+    <section id="about" class="h-auto flex flex-col justify-center items-center bg-cover bg-center relative fade-in md:flex-row" style="background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1200');">
+        <div class="bg-white bg-opacity-45 p-9 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+            <!-- Photo Section -->
+            <div class="mb-6 md:mb-0 md:mr-8 w-60 h-90 rounded-full overflow-hidden">
+                <img src="ME.jpg" alt="Your Photo" class="w-full h-full object-cover">
+            </div>
+            <!-- Text Section -->
+            <div class="text-center md:text-left text-black">
+                <h1 class="text-4xl font-bold mb-12">About Me</h1>
+                <p class="text-lg font-bold mb-6">Hi, I’m Khushiya Bhoge, passionate about website development and cloud computing, with a strong focus on creating dynamic, user-friendly web applications.<br>
+                 My interest lies in combining creative design with scalable cloud technologies to deliver seamless digital experiences</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-900 text-center fade-in">
+        <h1 class="text-4xl font-bold mb-14 text-white">Projects</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-6xl mx-auto">
+            <div class="project bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+
+                <h3 class="text-2xl font-bold mb-2">Project 1</h3>
+                <p>Simple Card Game using AWS CodePipeline in which HTML,CSS,Javascript,S3,Github are technologies are used</p>
+                <a href="https://github.com/khushiya24/Simple-Card-Game" target="_blank" class="text-blue-500 hover:text-blue-700">View Project</a>
+            </div>
+            <div class="project bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
+                <h3 class="text-2xl font-bold mb-2">Project 2</h3>
+                <p>Hoasting a Portfolio Website on AWS using Amazon S3</p>
+                <a href="link-to-your-project" target="_blank" class="text-blue-500 hover:text-blue-700">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section with Background Image -->
+<section id="education" class="py-16 bg-white text-center fade-in" 
+style="background-image: url('https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg?auto=compress&cs=tinysrgb&w=900'); background-size: cover; background-position: center; background-attachment: fixed;">
+<h1 class="text-4xl font-bold mb-12">Education</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-6xl mx-auto">
+    <div class="education-item bg-gray-100 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-2 text-black">HSC</h3>
+        <p class="text-lg text-black">Shri Dnyaneshwar Mahavidyalay</p>
+        <p class="text-lg text-black">2022</p>
+        <p class="text-sm mt-4 text-black">Passed the HSC with Science Stream.</p>
+    </div>
+    <div class="education-item bg-gray-100 p-6 rounded-lg shadow-lg text-black">
+        <h3 class="text-2xl font-bold mb-2 text-black">BCA(Bachelore of Computer Application)</h3>
+        <p class="text-lg text-black">D.Y.Patil International University</p>
+        <p class="text-lg text-black">2025</p>
+        <p class="text-sm mt-4 text-black">Pursuing BCA Degree with Cloud & Information Security Specilization.</p>
+    </div>
+    
+</div>
+</section>
+
+<section id="skills" class="py-16 text-center text-black"
+style="background-image: url('https://images.pexels.com/photos/433333/pexels-photo-433333.jpeg?auto=compress&cs=tinysrgb&w=600'); background-size: cover; background-position: center; background-attachment: fixed;">
+    <h1 class="text-4xl font-bold mb-8">My Skills</h1>
+    <ul class="text-lg">
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Frontend Frameworks (React,Tailwind CSS)</li>
+        <li>Cloud Computing (AWS, Azure)</li>
+        <li>Database Management (MySQL)</li>
+        <li>Version Control (Git, GitHub)</li>
+    </ul>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-300 text-center fade-in">
+        <h1 class="text-4xl font-bold mb-12">Contact Me</h1>
+        <p class="text-lg mb-4">Email: <a href="mailto:khushiyabhoge@gmail.com" class="text-blue-500 hover:text-blue-700">khushiyabhoge@gmail.com</a></p>
+        <p class="text-lg mb-4">LinkedIn: <a href="https://www.linkedin.com/feed/" class="text-blue-500 hover:text-blue-700">LinkedIn Profile</a></p>
+        <p class="text-lg mb-4">GitHub: <a href="https://github.com/khushiya24" class="text-blue-500 hover:text-blue-700">GitHub Profile</a></p>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p>© 2024 khushiya Bhoge. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
